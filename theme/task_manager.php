@@ -30,11 +30,11 @@ IsLogin();
 				?>
 				<tr class="list-users">
 					<td><?php echo $k+1;?></td>
-					<td><?php echo $v["url"];?></td>
-					<td><?php echo $website_data["title"]?$website_data["title"]:"未获取到网站标题";?></td>
-					<td><?php echo $website_data["ip"]?$website_data["ip"]:"未获取到网站ip";?></td>
-					<td><?php echo $website_data["server"]?$website_data["server"]:"未获取到网站环境";?></td>
-					<td><?php echo $v["descript"];?></td>
+					<td><?php echo htmlClean($v["url"]);?></td>
+					<td><?php echo $website_data["title"]?htmlClean($website_data["title"]):"未获取到网站标题";?></td>
+					<td><?php echo $website_data["ip"]?htmlClean($website_data["ip"]):"未获取到网站ip";?></td>
+					<td><?php echo $website_data["server"]?htmlClean($website_data["server"]):"未获取到网站环境";?></td>
+					<td><?php echo htmlClean($v["descript"]);?></td>
 					<td><?php 
 					if($v["status"]==0){
 						echo '<span class="label label-warning">Scaning</span>';
