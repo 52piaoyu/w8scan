@@ -61,6 +61,11 @@ web端提供一个链接 -> 节点运行 ->在web端可进行在线扫描等的�
 
 扫描器内置了bugscan的hackhttp模块
 
+## 安装
+1. 在任何支持php+mysql下即可安装，先修改config.php中数据库账号密码，和域名，然后导入sql文件即可运行
+2. 用户注册口令默认为`52w8scan`可在`config.php`中修改
+3. 默认账号密码 admin admin
+
 ## 图片展示
 首页
 ![1](https://user-images.githubusercontent.com/18695984/27781327-f4cfc320-5fff-11e7-81be-c5281c140551.jpg)
